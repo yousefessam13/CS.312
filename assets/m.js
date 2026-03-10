@@ -412,7 +412,9 @@ let avg = 0
 
 if(count > 0){
 
-avg = (sum / (count * 10)) * 100
+let totalQuestions = quizzes[subjects[0]].length
+
+avg = (sum / (count * totalQuestions)) * 100
 
 }
 
