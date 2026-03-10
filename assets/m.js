@@ -1,6 +1,42 @@
 if(localStorage.getItem("loggedIn") !== "true"){
 window.location.href = "login.html"
 }
+window.addEventListener("DOMContentLoaded", function(){
+
+if(localStorage.getItem("loggedIn") !== "true"){
+window.location.href = "login.html"
+}
+
+let email = localStorage.getItem("studentEmail")
+
+let nameBox = document.getElementById("studentName")
+
+if(email && nameBox){
+nameBox.innerText = "Welcome " + email
+}
+
+loadSubjects()
+updateGrades()
+
+})
+function login(){
+
+let email = document.getElementById("email").value
+let pass = document.getElementById("password").value
+if(email.endsWith("@must.edu.eg") && pass !== ""){
+localStorage.setItem("loggedIn","true")
+localStorage.setItem("studentEmail", email)
+
+window.location.href = "m.html"
+
+}else{
+
+document.getElementById("error").innerText =
+"Please enter a valid email"
+
+}
+
+}
 function logout(){
 
 localStorage.removeItem("loggedIn")
@@ -421,5 +457,3 @@ avg = (sum / (count * totalQuestions)) * 100
 document.getElementById("avgGrade").innerText = Math.round(avg) + "%"
 
 }
-loadSubjects()
-updateGrades()
