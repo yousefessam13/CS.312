@@ -393,7 +393,7 @@ grades.forEach(g => {
 
 let score = Number(g.score)
 
-html += `<li>${g.subject} : ${score}/10</li>`
+html += `<li>${g.subject} : ${g.score}/${quizzes[g.subject].length}</li>`
 
 sum += score
 
