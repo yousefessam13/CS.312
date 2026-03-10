@@ -17,13 +17,13 @@
 function login(){
 let email = document.getElementById("email").value
 let pass = document.getElementById("password").value
-let correctEmail = "200042840@must.edu.eg"
-let correctPass = "123456"
-if(email === correctEmail && pass === correctPass){
-localStorage.setItem("loggedIn", "true")
+if(email.endsWith("@must.edu.eg") && pass !== ""){
+localStorage.setItem("loggedIn","true")
+localStorage.setItem("studentEmail", email)
 window.location.href = "m.html"
 }else{
-document.getElementById("error").innerText = "Wrong Email or Password"
+document.getElementById("error").innerText =
+"Please enter a valid MUST email"
 }
 }
 </script>
