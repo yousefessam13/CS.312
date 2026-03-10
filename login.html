@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="m.css">
+</head>
+<body>
+<div class="loginBox">
+<h2>Student Login</h2>
+<input type="email" id="email" placeholder="Enter Email">
+<input type="password" id="password" placeholder="Enter Password">
+<button onclick="login()">Login</button>
+<p id="error"></p>
+</div>
+<script>
+function login(){
+let email = document.getElementById("email").value
+let pass = document.getElementById("password").value
+let correctEmail = "200042840@must.edu.eg"
+let correctPass = "123456"
+if(email === correctEmail && pass === correctPass){
+localStorage.setItem("loggedIn", "true")
+window.location.href = "m.html"
+}else{
+document.getElementById("error").innerText = "Wrong Email or Password"
+}
+}
+</script>
+</body>
+</html>

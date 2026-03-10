@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Smart Student Portal</title>
+<link rel="stylesheet" href="m.css">
+</head>
+
+<body>
+
+<h1>🎓 Smart Student Portal</h1>
+<button onclick="logout()">Logout</button>
+<div class="dashboard">
+
+<div class="card">
+<h3>Quizzes Completed</h3>
+<p id="quizCount">0</p>
+</div>
+
+<div class="card">
+<h3>Average Grade</h3>
+<p id="avgGrade">0%</p>
+</div>
+
+</div>
+
+<h2>📚 Subjects</h2>
+
+<div id="subjects" class="subjects"></div>
+
+<h2>Question Time</h2>
+
+<div id="quizBox" class="quizBox">
+
+<h3 id="question"></h3>
+
+<div id="answers"></div>
+
+<p>⏱: <span id="timer">30</span></p>
+
+</div>
+
+<hr>
+
+<h2>Your Plan</h2>
+
+<input id="taskInput" placeholder="Enter Plan">
+<button onclick="addTask()">Add</button>
+
+<ul id="taskList"></ul>
+
+<hr>
+
+<h2>- Grades History</h2>
+
+<ul id="grades"></ul>
+
+<script src="m.js"></script>
+
+</body>
+</html>

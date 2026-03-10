@@ -1,0 +1,138 @@
+body{
+
+font-family:Arial;
+background:#0f172a;
+color:white;
+text-align:center;
+
+}
+.loginBox{
+
+width:300px;
+margin:100px auto;
+padding:30px;
+background:#1e293b;
+border-radius:10px;
+text-align:center;
+
+}
+
+.loginBox input{
+
+width:90%;
+padding:10px;
+margin:10px;
+
+}
+
+.loginBox button{
+
+padding:10px 20px;
+cursor:pointer;
+
+}
+button{
+
+padding:8px 15px;
+margin:10px;
+background:red;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+
+}
+
+.dashboard{
+
+display:flex;
+justify-content:center;
+gap:20px;
+
+}
+
+.card{
+
+background:#1e293b;
+padding:20px;
+width:200px;
+border-radius:10px;
+
+}
+
+.subjects button{
+
+padding:10px 20px;
+margin:10px;
+cursor:pointer;
+border:none;
+background:#3b82f6;
+color:white;
+border-radius:6px;
+
+}
+
+.quizBox{
+
+margin-top:20px;
+
+}
+
+#answers button{
+
+display:block;
+margin:10px auto;
+padding:10px;
+width:250px;
+
+}
+
+#timer{
+
+color:red;
+font-size:20px;
+
+}
+.quizBox{
+
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+width:400px;
+margin:auto;
+
+}
+#answers button{
+
+background:#3b82f6;
+color:white;
+border:none;
+padding:10px;
+margin:10px;
+width:250px;
+border-radius:6px;
+cursor:pointer;
+
+}
+
+#answers button:hover{
+
+background:#2563eb;
+
+}
+#taskList li{
+
+background:#1e293b;
+margin:10px auto;
+padding:10px;
+width:300px;
+border-radius:6px;
+cursor:pointer;
+
+}
+
+#taskList li:hover{
+
+background:#334155;
+
+}
